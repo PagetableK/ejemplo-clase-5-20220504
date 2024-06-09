@@ -7,7 +7,7 @@ const LoginScreen = ({logueado, setLogueado}) => {
   //Estado de la app
   const [alias, setAlias] = useState('');
   const [clave, setClave] = useState('');
-  let ip = `10.10.1.15`;
+  let ip = `192.168.1.3`;
   const handleLogin = async () => {
     // Lógica de inicio de sesión
    
@@ -26,7 +26,6 @@ const LoginScreen = ({logueado, setLogueado}) => {
       setLogueado(!logueado)
     }
     else {
-      console.log(datos);
       // Alert the user about the error
       Alert.alert('Error sesion', datos.error);
     }
@@ -44,7 +43,6 @@ const LoginScreen = ({logueado, setLogueado}) => {
       setLogueado(false)
     }
     else {
-      console.log(datos);
       // Alert the user about the error
       Alert.alert('Error sesion', datos.error);
     }

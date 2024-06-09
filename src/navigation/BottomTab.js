@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 
 export default function BottomTab({ logueado, setLogueado }) {
   // Función para renderizar HomeScreen con props
-  const renderHomeScreen = props => (
+  const RenderHomeScreen = props => (
     <HomeScreen {...props} setLogueado={setLogueado} logueado={logueado} />
   );
 
@@ -18,7 +18,7 @@ export default function BottomTab({ logueado, setLogueado }) {
     <Tab.Navigator>
       <Tab.Screen
         name="HomeScreen"
-        component={renderHomeScreen}
+        component={RenderHomeScreen}
         options={{
           title: 'Inicio',
           tabBarActiveTintColor: '#FFC300', // Color activo de la pestaña
